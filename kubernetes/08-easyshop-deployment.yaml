@@ -7,7 +7,7 @@ spec:
   replicas: 2
   selector:
     matchLabels:
-      app: easyshop
+        app: easyshop
   template:
     metadata:
       labels:
@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: easyshop
-          image: iemafzal/easyshop-app:9
+          image: monikawalanj/easyshop:latest
           imagePullPolicy: Always
           ports:
             - containerPort: 3000
